@@ -1,0 +1,1 @@
+# tslint-plugin-hbs
