@@ -1,0 +1,48 @@
+{
+  "name": "tslint-plugin-hbs",
+  "version": "0.0.0",
+  "description": "Runs hbs-template-lint as a TSLint rule and reports errors.",
+  "keywords": [
+    "handlebars",
+    "ember",
+    "tslint",
+    "tslint-plugin",
+    "tslint-rules"
+  ],
+  "main": "rules/index.js",
+  "types": "rules/index.d.ts",
+  "repository": "https://github.com/psbanka/tslint-plugin-hbs",
+  "homepage": "https://github.com/psbanka/tslint-plugin-hbs#readme",
+  "author": {
+    "name": "psbanka",
+    "email": "psbanka@gmail.com",
+    "url": "https://github.com/psbanka"
+  },
+  "license": "MIT",
+  "scripts": {
+    "prepublish": "npm run build -- --inlineSourceMap false",
+    "lint": "tslint -p ./tsconfig.json --type-check",
+    "test": "tslint --test ./tests/*/*",
+    "test-coverage": "nyc npm run test",
+    "build": "rm -rf ./rules && tsc -p tsconfig.build.json",
+    "release": "standard-version"
+  },
+  "dependencies": {
+    "tslib": "^1.7.1"
+  },
+  "devDependencies": {
+    "@types/node": "8.10.0",
+    "tslint": "5.9.1",
+    "ember-template-lint": "^0.8.14",
+    "typescript": "2.8.1"
+  },
+  "peerDependencies": {
+    "tslint": "^5.0.0"
+  },
+  "engines": {
+    "node": ">= 8"
+  },
+  "files": [
+    "/rules/**/*"
+  ]
+}

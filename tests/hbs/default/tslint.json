@@ -1,0 +1,8 @@
+{
+  "rulesDirectory": ["../../../rules"],
+  "rules": {
+    "check-hbs-template-literals": [true,
+      { "ConfigFile": "./.eslint-template-lintrc.json" }
+    ]
+  }
+}

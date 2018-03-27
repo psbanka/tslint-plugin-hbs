@@ -1,0 +1,2 @@
+var template = hbs`<thing>`
+               ~~~~~~~~~~~~ [1 error(s): Unclosed element `thing` (on line 1).]
